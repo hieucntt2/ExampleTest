@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace bai1
+namespace Bai1
 {
     class Program
     {
