@@ -22,7 +22,6 @@ namespace Bai3
             result.Add(d1);
             result.Add(d2);
             return result;
-
         }
         static void Main(string[] args)
         {
@@ -49,8 +48,6 @@ namespace Bai3
             {
                 Console.Write(a[i] + " ");
             }
-
-
         }
     }
 }
