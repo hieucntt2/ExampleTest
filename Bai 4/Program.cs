@@ -13,7 +13,7 @@ using System.Text;
 using System;
 
 
-namespace Bai_4
+namespace Bai4
 {
     class Result
     {
