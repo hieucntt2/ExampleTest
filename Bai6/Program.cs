@@ -16,7 +16,7 @@ namespace Bai6
                     d1++;
                 else if (arr[i] == 0)
                     d0++;
-                else if (arr[i] <0)
+                else if (arr[i] < 0)
                     d++;
             }
             Console.WriteLine("{0:N6}" , d1 / len );
@@ -27,11 +27,8 @@ namespace Bai6
         static void Main(string[] args)
         {
             int n = Convert.ToInt32(Console.ReadLine().Trim());
-
             List<int> arr = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList();
-
             plusMinus(arr);
-
         }
     }
 }
