@@ -12,7 +12,7 @@ namespace Bai6
             int len = arr.Count;
             for(int i = 0; i < len; i++)
             {
-                if (arr[i] >0)
+                if (arr[i] > 0)
                     d1++;
                 else if (arr[i] == 0)
                     d0++;
