@@ -13,31 +13,31 @@ namespace Bai10
             {
                 if (Convert.ToInt32(str[0]) < 12)
                 {
-                    //res = ((int.Parse(str[0]) + 12) + ":" + str[1] + ":" + str[2].Replace("PM", "")).ToString();
-                    res = $"{int.Parse(str[0]) + 12}:{str[1]}:{str[2].Replace("PM", "")}";
+                    res = ((int.Parse(str[0]) + 12) + ":" + str[1] + ":" + str[2].Replace("PM", "")).ToString();
+                    //res = $"{int.Parse(str[0]) + 12}:{str[1]}:{str[2].Replace("PM", "")}";
                 }
                 else
                 {
-                    //res = s.Replace("PM", "");
-                    res = $"{s.Replace("PM", "")}";
+                    res = s.Replace("PM", "");
+                    //res = $"{s.Replace("PM", "")}";
                 }
             }
             else if (s.EndsWith("AM"))
             {
                 if (Convert.ToInt32(str[0]) >= 12)
                 {
-                    //res = ((int.Parse(str[0]) - 12) + ":" + str[1] + ":" + str[2].Replace("AM", "")).ToString();
-                    res = $"{int.Parse(str[0]) - 12}:{str[1]}:{str[2].Replace("AM", "")}";
+                    res = ((int.Parse(str[0]) - 12) + ":" + str[1] + ":" + str[2].Replace("AM", "")).ToString();
+                    //res = $"{int.Parse(str[0]) - 12}:{str[1]}:{str[2].Replace("AM", "")}";
                 }
                 else if (Convert.ToInt32(str[0]) == 12)
                 {
-                    //res = ("00:" + str[1] + ":" + str[2].Replace("AM", "")).ToString();
-                    res = $"00:{str[1]}:{str[2].Replace("AM", "")}";
+                    res = ("00:" + str[1] + ":" + str[2].Replace("AM", "")).ToString();
+                    //res = $"00:{str[1]}:{str[2].Replace("AM", "")}";
                 }
                 else
                 {
-                    //res = s.Replace("AM", "");
-                    res = $"{s.Replace("AM", "")}";
+                    res = s.Replace("AM", "");
+                    //res = $"{s.Replace("AM", "")}";
                 }
             }
             return res;
