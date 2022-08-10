@@ -15,14 +15,14 @@ namespace Bai9
             //{
             //    max = Math.Max(candles[i], max);
             //}
-            for (int i = 0; i < candles.Count; i++)
-            {
+            //for (int i = 0; i < candles.Count; i++)
+            //{
                 //if(candles[i] == max)
                 //{
                 //    d++;
                 //}
                 d = candles.Count(x => x == max);
-            }
+            //}
             return d;
         }
         static void Main(string[] args)
