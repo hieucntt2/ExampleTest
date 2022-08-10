@@ -11,15 +11,10 @@ namespace Bai8
             long sum1 = 0, sum2 = 0;
             int min = int.MaxValue;
             int max = int.MinValue;
-            List<int> maxSum = new List<int>();
-            List<int> minSum = new List<int>();
+            List<int> maxSum = arr.Select(x => x).ToList();
+            List<int> minSum = arr.Select(x => x).ToList();
             max = arr.Max();
             min = arr.Min();
-            for (int i = 0; i < arr.Count; i++)
-            {
-                maxSum.Add(arr[i]);
-                minSum.Add(arr[i]);
-            }
             maxSum.Remove(min);
             sum1 = maxSum.Sum();
             minSum.Remove(max);
