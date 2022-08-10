@@ -22,7 +22,6 @@ namespace Bai8
             }
             maxSum.Remove(min);
             sum1 = maxSum.Sum();
-
             minSum.Remove(max);
             sum2 = minSum.Sum();
             Console.WriteLine(sum2 + " " + sum1);
