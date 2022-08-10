@@ -13,8 +13,8 @@ namespace Bai10
             {
                 if (Convert.ToInt32(str[0]) < 12)
                 {
-                    res = ((int.Parse(str[0]) + 12) + ":" + str[1] + ":" + str[2].Replace("PM", "")).ToString();
-                    //res = $"{int.Parse(str[0]) + 12}:{str[1]}:{str[2].Replace("PM", "")}";
+                    //res = ((int.Parse(str[0]) + 12) + ":" + str[1] + ":" + str[2].Replace("PM", "")).ToString();
+                    res = $"{int.Parse(str[0]) + 12}:{str[1]}:{str[2].Replace("PM", "")}";
                 }
                 else
                 {
@@ -26,13 +26,13 @@ namespace Bai10
             {
                 if (Convert.ToInt32(str[0]) >= 12)
                 {
-                    res = ((int.Parse(str[0]) - 12) + ":" + str[1] + ":" + str[2].Replace("AM", "")).ToString();
-                    //res = $"{int.Parse(str[0]) - 12}:{str[1]}:{str[2].Replace("AM", "")}";
+                    //res = ((int.Parse(str[0]) - 12) + ":" + str[1] + ":" + str[2].Replace("AM", "")).ToString();
+                    res = $"{int.Parse(str[0]) - 12}:{str[1]}:{str[2].Replace("AM", "")}";
                 }
                 else if (Convert.ToInt32(str[0]) == 12)
                 {
-                    res = ("00:" + str[1] + ":" + str[2].Replace("AM", "")).ToString();
-                    //res = $"00:{str[1]}:{str[2].Replace("AM", "")}";
+                    //res = ("00:" + str[1] + ":" + str[2].Replace("AM", "")).ToString();
+                    res = $"00:{str[1]}:{str[2].Replace("AM", "")}";
                 }
                 else
                 {
