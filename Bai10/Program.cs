@@ -22,7 +22,7 @@ namespace Bai10
                     res = $"{s.Replace("PM", "")}";
                 }
             }
-            else if (s.EndsWith("AM") == true)
+            else if (s.EndsWith("AM"))
             {
                 if (Convert.ToInt32(str[0]) >= 12)
                 {
