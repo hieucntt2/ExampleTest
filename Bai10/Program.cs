@@ -9,7 +9,7 @@ namespace Bai10
             string res = "";
             string[] str = s.Split(':');
 
-            if (s.EndsWith("PM") == true)
+            if (s.EndsWith("PM"))
             {
                 if (Convert.ToInt32(str[0]) < 12)
                 {
